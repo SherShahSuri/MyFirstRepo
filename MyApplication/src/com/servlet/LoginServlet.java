@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 			writer.println("<form action='mydata' method='post'>");
 			writer.println("<input type='text' name='username'><br>");
 			writer.println("<input type='text' name='password'><br>");
-			writer.println("<input type='submit' name='login'");
+			writer.println("<input type='submit' name='login'>");
 			writer.println("</form");
 		}
 
