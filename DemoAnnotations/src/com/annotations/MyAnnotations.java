@@ -12,4 +12,7 @@ public @interface MyAnnotations {
 	int value1();
 
 	String name();
+
+	String demo_default() default "citi";
+
 }
