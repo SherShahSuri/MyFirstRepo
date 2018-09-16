@@ -6,7 +6,7 @@ import com.connections.Employee;
 
 public interface EmployeeDAO {
 	boolean addEmployee(Employee emp);
-	int updateEmployee(int empID, Employee emp);
+	boolean updateEmployee(int empID, Employee emp);
 	Employee findEmployeeByID(int empID);
 	List<Employee> findAllEmployees();
 	List<Employee> findAllEmployees(double salary);
