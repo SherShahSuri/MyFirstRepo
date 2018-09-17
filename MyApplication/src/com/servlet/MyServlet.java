@@ -15,11 +15,15 @@ public class MyServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		PrintWriter writer=resp.getWriter();
-		writer.println("<html>");
-		writer.println("<body>");
-		writer.println("Welcome to servlet");
-		writer.println("</body>");
-		writer.println("</html>");
+//		writer.println("<html>");
+//		writer.println("<head>");
+//		writer.println("<title>myservlet");
+//		writer.println("</title>");
+//		writer.println("</head>");
+//		writer.println("<body>");
+//		writer.println("Welcome to servlet");
+//		writer.println("</body>");
+//		writer.println("</html>");
 	}
 	
 }
