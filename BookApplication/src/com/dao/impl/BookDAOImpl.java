@@ -123,7 +123,7 @@ public class BookDAOImpl implements BookDAO {
 			ResultSet set = ps.executeQuery();
 			while (set.next()) {
 				int ISBN = set.getInt(1);
-				String bookname = set.getString("bookname");
+				String bookname = set.getString("bookName");
 				String author = set.getString("author");
 				String publication = set.getString("publication");
 				float price1 = set.getFloat("price");
