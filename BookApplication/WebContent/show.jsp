@@ -14,7 +14,7 @@
 		List<book> list = (List<book>) request.getAttribute("books");
 	%>
 
-	<table border=1 padding =1>
+	<table>
 		<%
 			for (book b : list) {
 		%><tr>

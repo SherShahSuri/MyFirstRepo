@@ -1,4 +1,5 @@
 
+import java.awt.print.Book;
 import java.io.IOException;
 import java.util.List;
 
@@ -14,16 +15,16 @@ import com.dao.BookDAO;
 import com.dao.impl.BookDAOImpl;
 
 /**
- * Servlet implementation class FindAllBooksServlet
+ * Servlet implementation class UpdateBookServlet
  */
-@WebServlet("/findall")
-public class FindAllBooksServlet extends HttpServlet {
+@WebServlet("/fetch")
+public class UpdateBookServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public FindAllBooksServlet() {
+	public UpdateBookServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -36,15 +37,12 @@ public class FindAllBooksServlet extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
-		BookDAO dao = new BookDAOImpl();
-		List<book> list = dao.findAllBooks();
-		
+		BookDAO daop = new BookDAOImpl();
+		List<book> list = daop.findAllBooks();
 		request.setAttribute("books", list);
-		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("show_jstl.jsp");
-		dispatcher.forward(request, response);
-		
 
+		RequestDispatcher dispatcher = request.getRequestDispatcher("update.jsp");
+		dispatcher.forward(request, response);
 	}
 
 	/**

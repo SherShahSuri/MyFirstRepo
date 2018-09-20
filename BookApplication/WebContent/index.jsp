@@ -13,5 +13,6 @@
 	<br>
 	<!-- whern you don't need to accept data from the user, you dont need to visit the jsp page, need to, otherwise -->
 	<a href="findall">Show all book</a>
+	<a href="fetch">Update book</a>
 </body>
 </html>
