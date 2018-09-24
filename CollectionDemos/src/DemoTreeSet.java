@@ -2,7 +2,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import com.beans.BookComparator;
-import com.lambda.book;
+import com.beans.book;
 
 public class DemoTreeSet {
 	public static void main(String[] args) {
