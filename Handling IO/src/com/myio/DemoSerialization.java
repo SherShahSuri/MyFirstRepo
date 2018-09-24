@@ -9,7 +9,7 @@ public class DemoSerialization {
 		try {
 			FileOutputStream fo=new FileOutputStream("person.txt");
 			ObjectOutputStream oo=new ObjectOutputStream(fo);
-			oo.writeObject(new Person(12,30,"ab","cd"));
+			oo.writeObject(new Person(12,"ab","cd", 30));
 			oo.close();
 			fo.close();
 		}

@@ -15,7 +15,7 @@ public class Test {
 			p[i]=new Person();
 			System.out.println("Kindly enter the Id, name, address and age for person no. "+i+"\n");
 			try {
-				p[i].setPerID(br.readLine());
+				p[i].setPerID(Integer.parseInt(br.readLine()));
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -33,7 +33,7 @@ public class Test {
 				e.printStackTrace();
 			}
 			try {
-				p[i].setPersonAge(br.readLine());
+				p[i].setPersonAge(Integer.parseInt(br.readLine()));
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
